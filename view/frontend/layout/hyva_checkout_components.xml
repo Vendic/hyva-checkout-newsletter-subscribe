@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="checkout.section.quote-actions">
+            <container name="newsletter.subscribe.wrapper" htmlTag="div" htmlClass="mt-4">
+                <block name="newsletter.subscribe.info"
+                       template="Vendic_HyvaCheckoutNewsletterSubscribe::subscribe/info.phtml">
+                    <block name="newsletter.subscribe.input" as="input">
+                        <arguments>
+                            <argument name="magewire" xsi:type="object">
+                                Vendic\HyvaCheckoutNewsletterSubscribe\Magewire\SubscribeInput
+                            </argument>
+                            <!--
+                            <argument name="input_css_classes" xsi:type="string">add-custom-css-classes-here</argument>
+                            -->
+                        </arguments>
+                    </block>
+                </block>
+            </container>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,16 @@
+<?php declare(strict_types=1);
+
+/** @var \Magento\Framework\Escaper $escaper */
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Vendic\HyvaCheckoutNewsletterSubscribe\Magewire\SubscribeInput $magewire */
+
+?>
+<div class="flex gap-x-4">
+    <div class="flex items-center">
+        <?= $block->getChildHtml('input') ?>
+    </div>
+    <div class="flex-1 gap-y-2">
+        <label for="newsletter-subscribe"><?= $escaper->escapeHtml(__('Subscribe to newsletter')) ?></label>
+    </div>
+</div>
+
