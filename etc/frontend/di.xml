@@ -1,8 +1,17 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-
     <type name="Hyva\Checkout\Model\Magewire\Payment\PlaceOrderServiceInterface">
         <plugin sortOrder="1" name="vendicHyvaCheckoutNewsletterSubscribePlaceOrderServiceInterface"
                 type="Vendic\HyvaCheckoutNewsletterSubscribe\Plugin\AddSubscriberToNewsletter"/>
+    </type>
+
+    <type name="Hyva\Checkout\Model\Form\EntityForm\EavAttributeShippingAddressForm">
+        <arguments>
+            <argument name="entityFormModifiers" xsi:type="array">
+                <item name="hide_subscribe_info_modifier" xsi:type="object">
+                    Vendic\HyvaCheckoutNewsletterSubscribe\Model\Form\Field\HideSubscribeInfoModifier
+                </item>
+            </argument>
+        </arguments>
     </type>
 </config>
