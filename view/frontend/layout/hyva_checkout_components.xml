@@ -4,8 +4,12 @@
     <body>
         <referenceContainer name="checkout.section.quote-actions">
             <container name="newsletter.subscribe.wrapper" htmlTag="div" htmlClass="mt-4">
-                <block name="newsletter.subscribe.info"
-                       template="Vendic_HyvaCheckoutNewsletterSubscribe::subscribe/info.phtml">
+                <block name="newsletter.subscribe.info" as="info">
+                    <arguments>
+                        <argument name="magewire" xsi:type="object">
+                            Vendic\HyvaCheckoutNewsletterSubscribe\Magewire\SubscribeInfo
+                        </argument>
+                    </arguments>
                     <block name="newsletter.subscribe.input" as="input">
                         <arguments>
                             <argument name="magewire" xsi:type="object">
