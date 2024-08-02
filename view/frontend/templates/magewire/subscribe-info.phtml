@@ -3,18 +3,16 @@
 /** @var \Magento\Framework\Escaper $escaper */
 /** @var \Magento\Framework\View\Element\Template $block */
 /** @var \Vendic\HyvaCheckoutNewsletterSubscribe\Magewire\SubscribeInfo $magewire */
-
 ?>
+
 <div wire:model="hasSubscription">
-    <?php if (!$magewire->hasSubscription): ?>
-    <div class="flex gap-x-4">
-        <div class="flex items-center">
+    <div class="flex gap-x-4 px-6">
+        <div class="flex items-center cursor-pointer">
             <?= $block->getChildHtml('input') ?>
         </div>
         <div class="flex-1 gap-y-2">
-            <label for="newsletter-subscribe"><?= $escaper->escapeHtml(__('Subscribe to newsletter')) ?></label>
+            <label class="checkout_news_subscribe" for="newsletter-subscribe"><?= $escaper->escapeHtml(__('Email me about new products, deals and surprise treats!')) ?></label>
         </div>
     </div>
-    <?php endif; ?>
 </div>
 
