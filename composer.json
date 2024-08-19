@@ -3,7 +3,7 @@
     "description": "Adds a newsletter subscribe checkbox on the Hyvä checkout",
     "require": {
         "php": "~8.1",
-        "hyva-themes/magento2-hyva-checkout": "^1.1.13"
+        "hyva-themes/magento2-hyva-checkout": "^1.1.17"
     },
     "license": "MIT",
     "type": "magento2-module",
