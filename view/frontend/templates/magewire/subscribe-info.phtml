@@ -6,7 +6,7 @@
 
 ?>
 <div>
-    <?php if (!$magewire->hasSubscription): ?>
+    <?php if (!$magewire->hidden): ?>
     <div class="flex gap-x-4">
         <div class="flex items-center">
             <?= $block->getChildHtml('input') ?>
