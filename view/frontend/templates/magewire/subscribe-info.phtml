@@ -5,8 +5,8 @@
 /** @var \Vendic\HyvaCheckoutNewsletterSubscribe\Magewire\SubscribeInfo $magewire */
 
 ?>
-<div wire:model="hasSubscription">
-    <?php if (!$magewire->hasSubscription): ?>
+<div>
+    <?php if (!$magewire->hidden): ?>
     <div class="flex gap-x-4">
         <div class="flex items-center">
             <?= $block->getChildHtml('input') ?>
