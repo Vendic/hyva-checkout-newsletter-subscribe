@@ -27,6 +27,10 @@ class HideSubscribeInfoModifier implements EntityFormModifierInterface
                     return $form;
                 }
 
+                if ($emailAddress->getPreviousValue() === $emailAddress->getValue()) {
+                    return $form;
+                }
+
                 $guestDetailsComponent->emit('subscribe_info_email_address_updated', $emailAddress->getValue());
 
                 return $form;
