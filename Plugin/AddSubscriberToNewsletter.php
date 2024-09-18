@@ -52,6 +52,6 @@ class AddSubscriberToNewsletter
 
     private function isLoggedInCustomer(): bool
     {
-        return $this->checkoutSession->getQuote()->getCustomerGroupId() !== GroupInterface::NOT_LOGGED_IN_ID;
+        return $this->checkoutSession->getQuote()->getCustomer()?->getId() !== null;
     }
 }
