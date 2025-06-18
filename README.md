@@ -6,8 +6,9 @@ Adds a newsletter subscribe checkbox on the [Hyvä checkout](https://www.hyva.io
 composer require vendic/hyva-checkout-newsletter-subscribe
 ```
 
-## Configuration
-None at this moment. When enabled, this module will add a newsletter subscription checkbox to the Hyvä checkout.
+## Admin Configuration
+
+This module doesn't have any admin settings, it's enabled by default after install.
 
 ## Screenshot
 ![Screenshot](./media/screenshot.png)
