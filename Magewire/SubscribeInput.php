@@ -31,6 +31,8 @@ class SubscribeInput extends Component
     {
         $this->subscribed
             = $this->checkoutSession->getData(self::IS_SUBSCRIBED_KEY) ?? $this->config->isCheckboxInitiallyEnabled();
+
+        $this->checkoutSession->setData(self::IS_SUBSCRIBED_KEY, $this->subscribed);
     }
 
     public function updatedSubscribed(mixed $value) : mixed
