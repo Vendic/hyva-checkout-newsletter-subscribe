@@ -42,7 +42,7 @@ class AddSubscriberToNewsletter
         try {
             $this->isLoggedInCustomer() ?
                 $this->subscriptionManager->subscribeCustomer(
-                    $this->checkoutSession->getQuote()->getCustomerId(),
+                    (int)$this->checkoutSession->getQuote()->getCustomerId(),
                     $storeId
                 ) :
                 $this->subscriptionManager->subscribe($email, $storeId);
