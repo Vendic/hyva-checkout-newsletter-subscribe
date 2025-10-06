@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+    ~ Copyright (c) Vendic B.V https://vendic.nl/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="vendic" translate="label" sortOrder="10">
+            <label>Vendic</label>
+        </tab>
+        <section id="hyva_checkout_newsletter_subscribe" translate="label" sortOrder="1000"
+                 showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Hyva Checkout Newsletter Subscribe</label>
+            <tab>vendic</tab>
+            <resource>Vendic_HyvaCheckoutNewsletterSubscribe::config</resource>
+            <group id="general" translate="label" sortOrder="10" showInStore="1" showInWebsite="1"
+                   showInDefault="1" type="text">
+                <label>General</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Is subscribe newsletter checkbox enabled by default (initially)</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

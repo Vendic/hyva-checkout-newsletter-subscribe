@@ -1,7 +1,10 @@
-<?php declare(strict_types=1);
+<?php
+
 /**
  * @copyright   Copyright (c) Vendic B.V https://vendic.nl/
  */
+
+declare(strict_types=1);
 
 namespace Vendic\HyvaCheckoutNewsletterSubscribe\Magewire;
 

@@ -6,9 +6,9 @@ Adds a newsletter subscribe checkbox on the [Hyvä checkout](https://www.hyva.io
 composer require vendic/hyva-checkout-newsletter-subscribe
 ```
 
-## Admin Configuration
-
-This module doesn't have any admin settings, it's enabled by default after install.
+## Configuration
+You can set initial state of checkbox in `Stores > Configuration > Vendic > Hyva Checkout Newsletter Subscribe`:
+- `Is subscribe newsletter checkbox enabled by default (initially)` - set to `Yes` if you want the checkbox to be checked by default.
 
 ## Screenshot
 ![Screenshot](./media/screenshot.png)
