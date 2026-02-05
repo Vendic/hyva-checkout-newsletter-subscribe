@@ -13,7 +13,7 @@ use Magento\Store\Model\ScopeInterface;
 
 class Config
 {
-    private const string HYVA_CHECKOUT_NEWSLETTER_SUBSCRIBE_IS_CHECKBOX_INITIALLY_ENABLED = 'hyva_checkout_newsletter_subscribe/general/enabled';
+    private const HYVA_CHECKOUT_NEWSLETTER_SUBSCRIBE_IS_CHECKBOX_INITIALLY_ENABLED = 'hyva_checkout_newsletter_subscribe/general/enabled';
 
     public function __construct(
         private ScopeConfigInterface $scopeConfig
