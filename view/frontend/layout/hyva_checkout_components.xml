@@ -4,7 +4,7 @@
     <body>
         <referenceContainer name="checkout.section.quote-actions">
             <container name="newsletter.subscribe.wrapper" htmlTag="div" htmlClass="mt-4">
-                <block name="newsletter.subscribe.info" as="info">
+                <block name="newsletter.subscribe.info" as="info" ifconfig="newsletter/general/active">
                     <arguments>
                         <argument name="magewire" xsi:type="object">
                             Vendic\HyvaCheckoutNewsletterSubscribe\Magewire\SubscribeInfo
