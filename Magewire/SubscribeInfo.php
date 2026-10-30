@@ -25,7 +25,7 @@ class SubscribeInfo extends Component
     /**
      * @var array
      */
-    public $listeners = ['subscribe_info_email_address_updated' => 'hideIfHasSubscription'];
+    protected $listeners = ['subscribe_info_email_address_updated' => 'hideIfHasSubscription'];
 
     public function __construct(
         private CheckoutSession $checkoutSession,
